@@ -5,12 +5,22 @@
  */
 
 require('lib/vendor/stack.php');
+include_once('key.inc');
 
-$askubuntu = API::Site('askubuntu');
-
-$unanswered = $askubuntu->Questions()->Unanswered()->Exec()->Total();
-$questions = $askubuntu->Questions()->Exec()->Total();
-
+try
+{
+	API::$key = $key;
+	$askubuntu = API::Site('askubuntu');
+	$unanswered = $askubuntu->Questions()->Unanswered()->Exec()->Total();
+	$questions = $askubuntu->Questions()->Exec()->Total();
+}
+catch( Exception $e )
+{
+	echo '<pre>';
+	var_dump($e);
+	echo '</pre>';
+	die("Shit, api isn't working.");
+}
 // Figure out the % of unanswered then subtract from 100
 $curr_accept_rate = 100 - round((($unanswered / $questions) * 100), 2);
 
