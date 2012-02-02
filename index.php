@@ -21,6 +21,7 @@ $answerd_questions_until_next_percentage = (($questions * (100 - $next_percentag
 
 $questions_till_we_rule_the_next_percentage = $unanswered - $answerd_questions_until_next_percentage;
 
+$percent_complete_to_next_percent = (INT)(100 - ($questions_till_we_rule_the_next_percentage / ((INT)($questions / 100))) * 100);
 /*
 echo "Unanswered: " . $unanswered . "<br>";
 echo "Total Qs: " . $questions . "<br>";
@@ -29,16 +30,6 @@ echo "Next %: " . $next_percentage . '<br>';
 echo "Answered Questions until next percentage: " . $answerd_questions_until_next_percentage . '<br>';
 echo "Questions until we rule the world: " . $questions_till_we_rule_the_next_percentage . '<br>';
 */
-?>
-<html>
-<head>
-<body>
-<h1>Hi!</h1>
-<h3>Ask Ubuntu is in <strike>CRISIS MODE</strike> - it's embarassing really. We're an awsome community of users which a smudge on our record. Acceptance rate.</h3>
-<h3>Right now. This very moment. We have an acceptance rate of <b><?php echo $curr_accept_rate; ?>%</b>.</h3>
-<h3>Damn. We have <b><?php echo number_format($unanswered); ?></b> unanswered questions, we need to "answer" <b><?php echo number_format($questions_till_we_rule_the_next_percentage); ?>
- more questions to hit <b><?php echo $next_percentage; ?>%</b></h3>
 
-<h1><a href="http://askubuntu.com/questions/?tab=unanswered" target="_blank">START ANSWERING!</a></h1>
-</body>
-</html>
+// Look! Ghetto templating
+require_once('tpl/index.tpl');
