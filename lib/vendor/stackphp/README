@@ -1,0 +1,40 @@
+  ___   _                 _         ___   _  _   ___
+ / __| | |_   __ _   __  | |__     | _ \ | || | | _ \
+ \__ \ |  _| / _` | / _| | / /  _  |  _/ | __ | |  _/
+ |___/  \__| \__,_| \__| |_\_\ (_) |_|   |_||_| |_|
+
+======================================================
+
+Stack.PHP is a PHP library that makes it easy to use the Stack Exchange API in
+web applications and command-line utilities.
+
+Contents:
+
+ 1. Generating documentation
+ 2. Running the test suite
+
+1. Generating documentation
+
+Generating documentation for Stack.PHP is very simple and straightforward.
+Stack.PHP uses Doxygen <http://doxygen.org> for generating documentation from
+comments in the source code. Simply make sure Doxygen is installed and run the
+following command in the directory containing the Stack.PHP files:
+
+  doxygen
+
+This will generate the documentation and place it in a folder 'doc' in the
+current directory. Documentation will be generated in both HTML and LaTeX
+format.
+
+2. Running the test suite
+
+Stack.PHP comes with a test suite that puts the source files through an
+exhaustive set of tests to make sure all methods and classes are working as
+expected. You can run this test by switching to the 'tests' directory and
+running:
+
+  php run_tests.php
+
+The test may take up to a minute or so to run and will produce output that
+either indicates that all tests passed or that an error occured in one of the
+classes.

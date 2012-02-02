@@ -1,0 +1,80 @@
+body {
+    font-family: arial, helvetica, sans;
+}
+
+#site_selector {
+    background-color: #eee;
+    border-radius: 20px;
+    padding: 16px;
+    margin-bottom: 20px;
+}
+
+input, select {
+    border: 1px solid #777;
+    background-color: #ddd;
+    color: #333;
+}
+
+input {
+    margin: 0px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+input[type=button], input[type=submit] {
+    cursor: pointer;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+input[type=button]:hover, input[type=submit]:hover {
+    border: 1px solid #000;
+    background-color: #ccc;
+}
+
+table {
+    border: 1px solid #aaa;
+    border-collapse: collapse;
+}
+
+table th {
+    background-color: #aaa;
+    color: #fff;
+    padding: 4px 6px;
+}
+
+table th img {
+    margin-left: 6px;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+table td {
+    padding: 0px 6px;
+}
+
+table td.even {
+    background-color: #eee;
+}
+
+.user-profile {
+    width: 300px;
+    overflow: auto;
+    margin: 10px;
+    padding: 10px;
+    background-color: #eee;
+    box-shadow: 2px 2px 8px #777;
+}
+
+.user-profile .gravatar {
+    width: 64px;
+    height: 64px;
+    float: left;
+    margin-right: 8px;
+}
+
+.user-profile kbd {
+    color: #090;
+    font-size: 12pt;
+    font-weight: bold;
+}

@@ -1,0 +1,88 @@
+/*===========================================
+   CSS styles to accompany helper functions
+===========================================*/
+
+#stackphp_canvas {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: #777;
+    opacity: 0.7;
+}
+
+#stackphp_dialog {
+    position: fixed;
+    background-color: #eee;
+    border: 1px solid black;
+    border-radius: 8px;
+    box-shadow: 5px 5px 10px #555;
+}
+
+#stackphp_dialog > div {
+    padding: 10px;
+}
+
+#stackphp_dialog_close {
+    float: right;
+    padding: 3px;
+    color: #555;
+    background-color: #ddd;
+    cursor: pointer;
+}
+
+#stackphp_dialog h2 {
+    margin-top: 0px;
+}
+
+/*============================
+    Find Dialog Components
+=============================*/
+
+.stackphp_find_dialog {
+    width: 300px;
+    height: 300px;
+}
+
+#stackphp_find_button {
+    float: right;
+    margin-left: 4px
+}
+
+#stackphp_find_searchcontainer {
+    overflow: hidden;
+}
+
+#stackphp_find_search {
+    width: 100%;
+}
+
+#stackphp_find_loading {
+    margin-top: 60px;
+    padding-left: 96px;
+    font-weight: bold;
+    color: #777;
+}
+
+#stackphp_find_results {
+    height: 150px;
+    overflow-y: scroll;
+    border: 1px solid #777;
+}
+
+.stackphp_find_username {
+    color: #555;
+    cursor: pointer;
+}
+
+.stackphp_find_username:hover {
+    color: #000;
+    background-color: #ccc;
+}
+
+.stackphp_find_reputation {
+    font-size: 9pt;
+    font-weight: bold;
+    color: #999;
+}
