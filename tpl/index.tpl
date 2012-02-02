@@ -49,10 +49,25 @@
         </div>
       </div>
       <hr>
-      <footer>Site by <a href="http://marcoceppi.com/" target="_blank">Marco Ceppi</a>, hosted on <a href="http://ondina.co" target="_blank">Ondina</a>. Made with StackPHP and Bootstrap. <small>Legal stuff.</small></footer>
+      <footer>
+        Site by <a href="http://marcoceppi.com/" target="_blank">Marco Ceppi</a>, hosted on <a href="http://ondina.co" target="_blank">Ondina</a>. Made with StackPHP and Bootstrap. <small><a href="#legal" data-toggle="modal">Legal stuff.</a></small>
+        <div class="modal hide" id="legal">
+          <div class="modal-header">
+            <a class="close" data-dismiss="modal">x</a>
+            <h3>Singing praises to the legal stuff!</h3>
+          </div>
+          <div class="modal-body">
+            <p>The Stack Exchange name and logos are trademarks of Stack Exchange Inc. The names and logos for sites and products operating on the Stack Exchange network are also trademarks of Stack Exchange Inc. Ubuntu and Canonical are registered trademarks of Canonical Ltd. Icons from <a href="http://glyphicons.com">Glyphicons Free</a>, licensed under <a href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>.</p>
+            <p>This site displays data using the Stack Exchange API, the site owner does not claim any ownership or responsibility to the data derived from this source.
+          </div>
+          <div class="modal-footer">
+            <a href="#" class="btn btn-primary" data-dismiss="modal">Close</a>
+          </div>
+        </div>
+      </footer>
     </div>
     <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
   </body>
 </html>
