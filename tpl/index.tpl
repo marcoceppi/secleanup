@@ -36,8 +36,8 @@
       <hr>
       <div class="row">
         <div class="span4">
-          <h2>Acceptance Rate</h2>
-          <p>Currently <big><?php echo $curr_accept_rate; ?></big>% questions are considered "answered" on our site. Out of <?php echo number_format($questions); ?> questions, <big><?php echo number_format($unanswered); ?></big> remain unanswered. In order to have an accepted answer rate of <big><?php echo $next_percentage; ?></big>% we need to "<a href="#" rel="tooltip" data-original-title="Answer, Close, Delete, Destroy">answer</a>" <big><?php echo number_format($questions_till_we_rule_the_next_percentage); ?></big> more questions.</p>
+          <h2>Answered Questions</h2>
+          <p>Currently <big><?php echo $curr_accept_rate; ?></big>% questions are considered "answered" on our site. Out of <?php echo number_format($questions); ?> questions, <big><?php echo number_format($unanswered); ?></big> remain unanswered. In order to have an answered rate of <big><?php echo $next_percentage; ?></big>% we need to "<a href="#" rel="tooltip" data-original-title="Answer, Close, Delete, Destroy">answer</a>" <big><?php echo number_format($questions_till_we_rule_the_next_percentage); ?></big> more questions.</p>
           <div class="progress" style="margin-bottom:0;">
             <div class="bar" style="width: <?php echo $percent_complete_to_next_percent; ?>%"></div>
           </div>
