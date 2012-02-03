@@ -37,7 +37,7 @@
       <div class="row">
         <div class="span4">
           <h2>Acceptance Rate</h2>
-          <p>Currently <big><?php echo $curr_accept_rate; ?></big>% questions are considered "answered" on our site. Out of <?php echo number_format($questions); ?> questions, <big><?php echo number_format($unanswered); ?></big> remain unanswered. In order to have an accepted answer rate of <big><?php echo $next_percentage; ?></big>% we need to "answer" <big><?php echo number_format($questions_till_we_rule_the_next_percentage); ?></big> more questions.</p>
+          <p>Currently <big><?php echo $curr_accept_rate; ?></big>% questions are considered "answered" on our site. Out of <?php echo number_format($questions); ?> questions, <big><?php echo number_format($unanswered); ?></big> remain unanswered. In order to have an accepted answer rate of <big><?php echo $next_percentage; ?></big>% we need to "<a href="#" rel="tooltip" data-original-title="Answer, Close, Delete, Destroy">answer</a>" <big><?php echo number_format($questions_till_we_rule_the_next_percentage); ?></big> more questions.</p>
           <div class="progress" style="margin-bottom:0;">
             <div class="bar" style="width: <?php echo $percent_complete_to_next_percent; ?>%"></div>
           </div>
@@ -54,7 +54,7 @@
         <div class="modal hide" id="legal">
           <div class="modal-header">
             <a class="close" data-dismiss="modal">x</a>
-            <h3>Singing praises to the legal stuff!</h3>
+            <h3>Singing praises to all the lawyers out there!</h3>
           </div>
           <div class="modal-body">
             <p>The Stack Exchange name and logos are trademarks of Stack Exchange Inc. The names and logos for sites and products operating on the Stack Exchange network are also trademarks of Stack Exchange Inc. Ubuntu and Canonical are registered trademarks of Canonical Ltd. Icons from <a href="http://glyphicons.com">Glyphicons Free</a>, licensed under <a href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>.</p>
@@ -69,5 +69,6 @@
     <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
     <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+    <script type="text/javascript">$(function() { $('a[rel=tooltip]').tooltip() });</script>
   </body>
 </html>
