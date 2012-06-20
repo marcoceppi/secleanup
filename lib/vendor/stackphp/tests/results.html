@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Stack.PHP Test Results</title>
+<style type='text/css'>
+
+body {
+    font-family: arial, sans, helvetica;
+    margin: 4px 24px;
+}
+
+pre a {
+    color: #00f;
+    text-decoration: none;
+}
+
+pre a:hover {
+    color: #55f;
+    text-decoration: underline;
+}
+
+.status .passed {
+    color: #090;
+    font-weight: bold;
+}
+
+.status .failed {
+    color: #f00;
+    font-weight: bold;
+}
+
+.test {
+    background-color: #eee;
+    padding: 8px;
+    border-radius: 12px;
+}
+
+.test .name {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.test .description {
+    font-style: italic;
+}
+
+.test .duration {
+    display: block;
+    margin-top: 12px;
+}
+
+.test .status {
+    display: block;
+}
+
+.output, .exception {
+    margin: 8px 20px;
+}
+
+.output .label, .exception .label {
+    display: block;
+    margin-top: 16px;
+    font-weight: bold;
+}
+
+.output pre, .exception pre {
+    margin-bottom: 24px;
+    max-height: 200px;
+    overflow-y: auto;
+    word-wrap: break-word;
+}
+
+.exception pre {
+    color: #900;
+}
+
+.footer {
+    font-size: 10pt;
+}
+
+</style>
+</head>
+<body>
+<h2>Stack.PHP Test Results</h2>
+<p>
+  <span class='status'><b>Status:</b> <span class='failed'>2 test(s) failed</span></span><br />
+  <b>Timing:</b> began <i>Thu, 02 Feb 2012 20:05:13 -0500</i> and completed in <i>2.55 seconds</i><br />
+</p>
+<div class="test">
+  <span class="name">API Routes</span>
+  <span class="description">Performs an exhaustive test of all site-specific routes, ensuring that returned data matches the specified criterion.</span>
+  <span class="duration">Duration: 1.32 seconds</span>
+  <span class="status">Status: <span class="failed">Failed</span></span>
+</div>
+<div class="output">
+  <span class="label">Output:</span>
+  <pre>* /answers
+[DEBUG]: Issuing request <a href="http://api.stackexchange.com/2.0/answers?filter=%21DnBO_&amp;key=ABqBaKNdubSh1TTyhKC35w%28%28&amp;site=askubuntu&amp;page=1" target="_blank">http://api.stackexchange.com/2.0/answers?filter=%21DnBO_&amp;key=ABqBaKNdubSh1TTyhKC35w%28%28&amp;site=askubuntu&amp;page=1</a>
+* /answers/{IDs}
+[DEBUG]: Issuing request <a href="http://api.stackexchange.com/2.0/answers/2;10?filter=%21DnBO_&amp;key=ABqBaKNdubSh1TTyhKC35w%28%28&amp;site=askubuntu&amp;page=1" target="_blank">http://api.stackexchange.com/2.0/answers/2;10?filter=%21DnBO_&amp;key=ABqBaKNdubSh1TTyhKC35w%28%28&amp;site=askubuntu&amp;page=1</a>
+* /answers/{IDs}/comments
+[DEBUG]: Issuing request <a href="http://api.stackexchange.com/2.0/answers/2;10/comments?filter=%21DnBO_&amp;key=ABqBaKNdubSh1TTyhKC35w%28%28&amp;site=askubuntu&amp;page=1" target="_blank">http://api.stackexchange.com/2.0/answers/2;10/comments?filter=%21DnBO_&amp;key=ABqBaKNdubSh1TTyhKC35w%28%28&amp;site=askubuntu&amp;page=1</a>
+* /badges
+[DEBUG]: Issuing request <a href="http://api.stackexchange.com/2.0/badges?filter=%21DnBO_&amp;key=ABqBaKNdubSh1TTyhKC35w%28%28&amp;site=askubuntu&amp;page=1" target="_blank">http://api.stackexchange.com/2.0/badges?filter=%21DnBO_&amp;key=ABqBaKNdubSh1TTyhKC35w%28%28&amp;site=askubuntu&amp;page=1</a>
+* /badges/{IDs}
+[DEBUG]: Issuing request <a href="http://api.stackexchange.com/2.0/badges/1;2?filter=%21DnBO_&amp;key=ABqBaKNdubSh1TTyhKC35w%28%28&amp;site=askubuntu&amp;page=1" target="_blank">http://api.stackexchange.com/2.0/badges/1;2?filter=%21DnBO_&amp;key=ABqBaKNdubSh1TTyhKC35w%28%28&amp;site=askubuntu&amp;page=1</a>
+* /badges/name
+[DEBUG]: Issuing request <a href="http://api.stackexchange.com/2.0/badges/name?filter=%21DnBO_&amp;key=ABqBaKNdubSh1TTyhKC35w%28%28&amp;site=askubuntu&amp;page=1" target="_blank">http://api.stackexchange.com/2.0/badges/name?filter=%21DnBO_&amp;key=ABqBaKNdubSh1TTyhKC35w%28%28&amp;site=askubuntu&amp;page=1</a>
+* /badges/recipients
+[DEBUG]: Issuing request <a href="http://api.stackexchange.com/2.0/badges/recipients?filter=%21DnBO_&amp;key=ABqBaKNdubSh1TTyhKC35w%28%28&amp;site=askubuntu&amp;page=1" target="_blank">http://api.stackexchange.com/2.0/badges/recipients?filter=%21DnBO_&amp;key=ABqBaKNdubSh1TTyhKC35w%28%28&amp;site=askubuntu&amp;page=1</a>
+* /badges/{IDs}/recipients
+[DEBUG]: Issuing request <a href="http://api.stackexchange.com/2.0/badges/1/recipients?filter=%21DnBO_&amp;key=ABqBaKNdubSh1TTyhKC35w%28%28&amp;site=askubuntu&amp;page=1" target="_blank">http://api.stackexchange.com/2.0/badges/1/recipients?filter=%21DnBO_&amp;key=ABqBaKNdubSh1TTyhKC35w%28%28&amp;site=askubuntu&amp;page=1</a>
+* /badges/tags
+[DEBUG]: Issuing request <a href="http://api.stackexchange.com/2.0/badges/tags?filter=%21DnBO_&amp;key=ABqBaKNdubSh1TTyhKC35w%28%28&amp;site=askubuntu&amp;page=1" target="_blank">http://api.stackexchange.com/2.0/badges/tags?filter=%21DnBO_&amp;key=ABqBaKNdubSh1TTyhKC35w%28%28&amp;site=askubuntu&amp;page=1</a>
+* /comments
+[DEBUG]: Issuing request <a href="http://api.stackexchange.com/2.0/comments?filter=%21DnBO_&amp;key=ABqBaKNdubSh1TTyhKC35w%28%28&amp;site=askubuntu&amp;page=1" target="_blank">http://api.stackexchange.com/2.0/comments?filter=%21DnBO_&amp;key=ABqBaKNdubSh1TTyhKC35w%28%28&amp;site=askubuntu&amp;page=1</a>
+* /comments/{IDs}
+[DEBUG]: Issuing request <a href="http://api.stackexchange.com/2.0/comments/54321;9498;32219?filter=%21DnBO_&amp;key=ABqBaKNdubSh1TTyhKC35w%28%28&amp;site=askubuntu&amp;page=1" target="_blank">http://api.stackexchange.com/2.0/comments/54321;9498;32219?filter=%21DnBO_&amp;key=ABqBaKNdubSh1TTyhKC35w%28%28&amp;site=askubuntu&amp;page=1</a>
+* /errors
+[DEBUG]: Issuing request <a href="http://api.stackexchange.com/2.0/errors?filter=%21DnBO_&amp;key=ABqBaKNdubSh1TTyhKC35w%28%28&amp;site=askubuntu&amp;page=1" target="_blank">http://api.stackexchange.com/2.0/errors?filter=%21DnBO_&amp;key=ABqBaKNdubSh1TTyhKC35w%28%28&amp;site=askubuntu&amp;page=1</a>
+</pre>
+</div><div class="exception">
+    <span class="label">Exceptions:</span>
+    <pre>An API error has occurred.</pre>
+</div><div class="test">
+  <span class="name">Cache</span>
+  <span class="description">Tests the SQL cache to ensure that data can be stored and retrieved correctly and ensures that the TTL value is respected.</span>
+  <span class="duration">Duration: 0.00 seconds</span>
+  <span class="status">Status: <span class="failed">Failed</span></span>
+</div>
+<div class="output">
+  <span class="label">Output:</span>
+  <pre>[no output]</pre>
+</div><div class="exception">
+    <span class="label">Exceptions:</span>
+    <pre>Cache: could not find driver</pre>
+</div><div class="test">
+  <span class="name">Filter</span>
+  <span class="description">Tests the functionality of filters to ensure that responses contain the specified fields and that HTML data is properly escaped according to the filter's settings.</span>
+  <span class="duration">Duration: 0.17 seconds</span>
+  <span class="status">Status: <span class="passed">Passed</span></span>
+</div>
+<div class="output">
+  <span class="label">Output:</span>
+  <pre>[DEBUG]: Issuing request <a href="http://api.stackexchange.com/2.0/filters/create?filter=%21DnBO_&amp;key=ABqBaKNdubSh1TTyhKC35w%28%28&amp;unsafe=false" target="_blank">http://api.stackexchange.com/2.0/filters/create?filter=%21DnBO_&amp;key=ABqBaKNdubSh1TTyhKC35w%28%28&amp;unsafe=false</a>
+[DEBUG]: Pausing for 0.010 seconds...
+[DEBUG]: Issuing request <a href="http://api.stackexchange.com/2.0/answers?filter=%21mVhfQDLPO%2A&amp;key=ABqBaKNdubSh1TTyhKC35w%28%28&amp;site=stackoverflow&amp;page=1" target="_blank">http://api.stackexchange.com/2.0/answers?filter=%21mVhfQDLPO%2A&amp;key=ABqBaKNdubSh1TTyhKC35w%28%28&amp;site=stackoverflow&amp;page=1</a>
+[DEBUG]: Pausing for 0.001 seconds...
+[DEBUG]: Issuing request <a href="http://api.stackexchange.com/2.0/filters/!mVhfQDLPO*?filter=%21DnBO_&amp;key=ABqBaKNdubSh1TTyhKC35w%28%28" target="_blank">http://api.stackexchange.com/2.0/filters/!mVhfQDLPO*?filter=%21DnBO_&amp;key=ABqBaKNdubSh1TTyhKC35w%28%28</a>
+</pre>
+</div><div class="test">
+  <span class="name">Global Methods</span>
+  <span class="description">Tests all of the global methods (except for those covered by other tests) to ensure that data is returned in the expected format.</span>
+  <span class="duration">Duration: 0.66 seconds</span>
+  <span class="status">Status: <span class="passed">Passed</span></span>
+</div>
+<div class="output">
+  <span class="label">Output:</span>
+  <pre>[DEBUG]: Issuing request <a href="http://api.stackexchange.com/2.0/sites?filter=%21DnBO_&amp;key=ABqBaKNdubSh1TTyhKC35w%28%28&amp;page=1" target="_blank">http://api.stackexchange.com/2.0/sites?filter=%21DnBO_&amp;key=ABqBaKNdubSh1TTyhKC35w%28%28&amp;page=1</a>
+[DEBUG]: Issuing request <a href="http://api.stackexchange.com/2.0/sites?filter=%21DnBO_&amp;key=ABqBaKNdubSh1TTyhKC35w%28%28&amp;page=2" target="_blank">http://api.stackexchange.com/2.0/sites?filter=%21DnBO_&amp;key=ABqBaKNdubSh1TTyhKC35w%28%28&amp;page=2</a>
+[DEBUG]: Issuing request <a href="http://api.stackexchange.com/2.0/sites?filter=%21DnBO_&amp;key=ABqBaKNdubSh1TTyhKC35w%28%28&amp;page=3" target="_blank">http://api.stackexchange.com/2.0/sites?filter=%21DnBO_&amp;key=ABqBaKNdubSh1TTyhKC35w%28%28&amp;page=3</a>
+[DEBUG]: Issuing request <a href="http://api.stackexchange.com/2.0/sites?filter=%21DnBO_&amp;key=ABqBaKNdubSh1TTyhKC35w%28%28&amp;page=4" target="_blank">http://api.stackexchange.com/2.0/sites?filter=%21DnBO_&amp;key=ABqBaKNdubSh1TTyhKC35w%28%28&amp;page=4</a>
+[DEBUG]: Issuing request <a href="http://api.stackexchange.com/2.0/sites?filter=%21DnBO_&amp;key=ABqBaKNdubSh1TTyhKC35w%28%28&amp;page=5" target="_blank">http://api.stackexchange.com/2.0/sites?filter=%21DnBO_&amp;key=ABqBaKNdubSh1TTyhKC35w%28%28&amp;page=5</a>
+[DEBUG]: Issuing request <a href="http://api.stackexchange.com/2.0/sites?filter=%21DnBO_&amp;key=ABqBaKNdubSh1TTyhKC35w%28%28&amp;page=6" target="_blank">http://api.stackexchange.com/2.0/sites?filter=%21DnBO_&amp;key=ABqBaKNdubSh1TTyhKC35w%28%28&amp;page=6</a>
+[DEBUG]: Issuing request <a href="http://api.stackexchange.com/2.0/users/1/associated?filter=%21DnBO_&amp;key=ABqBaKNdubSh1TTyhKC35w%28%28&amp;page=1" target="_blank">http://api.stackexchange.com/2.0/users/1/associated?filter=%21DnBO_&amp;key=ABqBaKNdubSh1TTyhKC35w%28%28&amp;page=1</a>
+</pre>
+</div><div class="test">
+  <span class="name">Question</span>
+  <span class="description">Tests the QuestionRequest object to ensure that the correct URLs are generated as parameters and methods are modified.</span>
+  <span class="duration">Duration: 0.39 seconds</span>
+  <span class="status">Status: <span class="passed">Passed</span></span>
+</div>
+<div class="output">
+  <span class="label">Output:</span>
+  <pre>[DEBUG]: Issuing request <a href="http://api.stackexchange.com/2.0/questions/no-answers?filter=%21DnBO_&amp;key=ABqBaKNdubSh1TTyhKC35w%28%28&amp;site=stackapps.com&amp;sort=votes&amp;min=8&amp;page=1" target="_blank">http://api.stackexchange.com/2.0/questions/no-answers?filter=%21DnBO_&amp;key=ABqBaKNdubSh1TTyhKC35w%28%28&amp;site=stackapps.com&amp;sort=votes&amp;min=8&amp;page=1</a>
+</pre>
+</div><div class="test">
+  <span class="name">URL</span>
+  <span class="description">Verifies that parameters passed to the URL class result in properly constructed URLs.</span>
+  <span class="duration">Duration: 0.00 seconds</span>
+  <span class="status">Status: <span class="passed">Passed</span></span>
+</div>
+<div class="output">
+  <span class="label">Output:</span>
+  <pre>[no output]</pre>
+</div><div class="test">
+  <span class="name">User</span>
+  <span class="description">Tests the UserRequest object to ensure that the correct URLs are generated as parameters, methods, and access tokens are modified.</span>
+  <span class="duration">Duration: 0.00 seconds</span>
+  <span class="status">Status: <span class="passed">Passed</span></span>
+</div>
+<div class="output">
+  <span class="label">Output:</span>
+  <pre>[no output]</pre>
+</div>
+<br /><hr />
+<span class="footer">
+  Total requests processed: <b>23</b> - Total API requests made: <b>23</b>
+</span>
+</body>
+</html>

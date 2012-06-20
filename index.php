@@ -19,7 +19,7 @@ catch( Exception $e )
 	echo '<pre>';
 	var_dump($e);
 	echo '</pre>';
-	die("Shit, api isn't working.");
+	die("API isn't working!!");
 }
 // Figure out the % of unanswered then subtract from 100
 $curr_accept_rate = 100 - round((($unanswered / $questions) * 100), 2);
@@ -40,6 +40,22 @@ echo "Next %: " . $next_percentage . '<br>';
 echo "Answered Questions until next percentage: " . $answerd_questions_until_next_percentage . '<br>';
 echo "Questions until we rule the world: " . $questions_till_we_rule_the_next_percentage . '<br>';
 */
+
+try
+{
+	$qs = $askubuntu->Questions()->Unanswered()->Tagged('bug')->Exec();
+	while( $item = $qs->Fetch(TRUE) )
+	{
+		$bugs[] = $item;
+	}
+}
+catch( Excetion $e )
+{
+	die($e);
+}
+
+//var_dump($bugs);
+
 
 // Look! Ghetto templating
 require_once('tpl/index.tpl');

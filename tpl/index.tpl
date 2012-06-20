@@ -44,6 +44,12 @@
           <p><small>Progress to <?php echo $next_percentage; ?>% answered rate.</small></p>
         </div>
         <div class="span4">
+          <h2>Help us clean up!</h2>
+          <p>As an <a href="http://meta.askubuntu.com/questions/2651/ask-ubuntu-clean-up" target="_blank">organized effort</a> to clean up the site and maintain not only a high
+	  acceptance rating, but also high quality content on the site, we've launched a <a href="http://cleanup.thepcspy.com/">clean up</a> site to help target lower quality posts
+	  and handle them better.</p>
+        </div>
+        <div class="span4">
           <h2>Additional Crap</h2>
           <p>We can put even more metrics here. Might as well make this more useful.</p>
         </div>
